@@ -47,24 +47,24 @@ $ cp /usr/local/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
 
 根据所使用的桌面管理器及 shell，选择适合的方式进行配置：
 
-- 登录显示器
+- 登录管理器配置路径
 
 1. SDDM、LightDM、GDM 都可以在 `~/.xprofile` 中写入 A 组配置
 2. LightDM、GDM 可以在 `~/.profile` 中写入 A 组配置
 3. SDDM 可以在用户登录 shell 的配置文件中写入配置
 
-- 配置路径
+- Shell 配置路径
 
-- sh: `~/.profile` 写入 A 组配置
-- bash: `~/.bash_profile` 或 `~/.profile` 写入 A 组配置
-- zsh: `~/.zprofile` 写入 A 组配置
-- csh: `~/.cshrc` 写入 B 组配置
+1. sh: `~/.profile` 写入 A 组配置
+2. bash: `~/.bash_profile` 或 `~/.profile` 写入 A 组配置
+3. zsh: `~/.zprofile` 写入 A 组配置
+4. csh: `~/.cshrc` 写入 B 组配置
 
 >**注意**
 >
 >如果登录桌面的用户账户不是 root，则不能使用 root 身份进行设置：必须切换到该用户，并在不使用 sudo 的情况下进行配置。
 
-- A 组（sh/bash/zsh）：
+- A 组（sh/bash/zsh）
 
 ```ini
 export LANG=zh_CN.UTF-8            # 设置系统语言为中文
