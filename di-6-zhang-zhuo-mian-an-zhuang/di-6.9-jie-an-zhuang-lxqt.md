@@ -38,9 +38,10 @@
 # service sddm enable  # 设置 SDDM 显示管理器开机自启
 ```
 
-## fstab
+## 挂载 proc 文件系统
 
-编辑 `/etc/fstab` 文件，加入：
+
+编辑 `/etc/fstab` 文件，加入下行：
 
 ```sh
 proc	/proc	procfs	rw	0	0
