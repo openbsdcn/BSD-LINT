@@ -41,7 +41,6 @@ GNOME 过去曾是 GNU 项目，旨在开发一套功能齐全的桌面环境，
 # pkg install xorg-minimal gnome-lite wqy-fonts xdg-user-dirs
 ```
 
-
 - 或者使用 Ports 安装：
 
 ```sh
@@ -73,7 +72,7 @@ GNOME 过去曾是 GNU 项目，旨在开发一套功能齐全的桌面环境，
 
 使用文本编辑器打开 `/etc/fstab` 文件以编辑文件系统挂载信息。
 
-添加内容如下：
+添加内容如下挂载 proc 文件系统：
 
 ```ini
 proc /proc procfs rw 0 0
