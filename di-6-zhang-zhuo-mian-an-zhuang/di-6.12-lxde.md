@@ -42,7 +42,7 @@
 exec startlxde
 ```
 
-便于通过 `stsrtx` 命令启动 LXDE 桌面环境。
+便于通过 `startx` 命令启动 LXDE 桌面环境。
 
 ## 启动项
 
